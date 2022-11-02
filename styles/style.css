@@ -23,7 +23,12 @@ a:hover {
   color: #000000;
 }
 
+.page-wrapper {
+  display: flex;
+}
+
 .personal-info {
+  /* display: inline-block; */
   color: #fff;
   padding: 25px;
   background-color: #3f6592;
@@ -101,8 +106,12 @@ a:hover {
 }
 
 .experience {
-  margin-left: 25px;
+  display: inline-block;
+    height: 500px;
+    background: none;
+    padding: 25px;
 }
+
 .experience .line {
   background: #d3d3d3;
 }
@@ -116,20 +125,15 @@ a:hover {
   font-size: 2rem;
 }
 
-/* .experience {
-  height: 200px;
-  background: red;
-} */
 
-@media screen and (min-width: 800px) {
-	.personal-info,
-	.experience {
-		display: inline-block;
+@media screen and (max-width: 800px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+  .personal-info {
+		width: 100%;
 	}
-	.personal-info {
-		width: 30%;
-	}
 	.experience {
-		width: 70%;
+		width: 100%;
 	}
 }
