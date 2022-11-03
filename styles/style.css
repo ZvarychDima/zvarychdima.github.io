@@ -124,6 +124,9 @@ a:hover {
 .experience .title {
   font-size: 2rem;
 }
+.experience a {
+  color: #000;
+}
 
 
 @media screen and (max-width: 800px) {
