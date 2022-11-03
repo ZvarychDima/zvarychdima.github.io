@@ -1,0 +1,39 @@
+/* Скидання базових правил в Браузері */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+  overflow: hidden;
+  text-align: center;
+  font-size: 29px;
+}
+
+.title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title:before,
+.title:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 6px;
+  background-color: #000;
+  position: relative;
+}
+
+.title:before {
+  margin-left: -100%;
+  left: -11px;
+}
+
+.title:after {
+  margin-right: -100%;
+  right: -11px;
+ 
+}
