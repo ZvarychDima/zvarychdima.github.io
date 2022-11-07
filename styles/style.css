@@ -31,7 +31,7 @@ a:hover {
   /* display: inline-block; */
   color: #fff;
   padding: 25px;
-  background-color: #3f6592;
+  background: linear-gradient(to bottom, rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%);
 }
 
 .photo {
@@ -126,6 +126,10 @@ a:hover {
 }
 .experience a {
   color: #000;
+}
+
+.proect {
+  list-style-position: inside;
 }
 
 
